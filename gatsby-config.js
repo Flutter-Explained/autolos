@@ -5,10 +5,17 @@ const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
+    siteTitle: `Autolos`,
+    siteHeadline: `Der Weg in eine autofreie Zukunft`,
+    siteUrl: `https://youtube.com/c/flutterexplained`,
+    siteDescription: `Auf dieser Seite möchte ich vom Auto wegkommen`,
+    siteLanguage: `de-DE`,
+    siteImage: ``,
+    author: `Max Weber`,
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Autolos - Autofreie Zukunft`,
   },
   plugins: [
     {
@@ -28,11 +35,7 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            url: `https://twitter.com/flutter_exp`,
           },
         ],
       },
@@ -64,9 +67,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Autolos - Autofreie Zukunft`,
+        short_name: `autofreie_zukunft`,
+        description: `Ein Pfad in eine Auto freie Zukunft für mich`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
@@ -132,7 +135,7 @@ module.exports = {
               }
             `,
             output: `rss.xml`,
-            title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+            title: `Autolos - Der Weg in eine Auto freie Zukunft`,
           },
         ],
       },
